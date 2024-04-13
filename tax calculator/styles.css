@@ -1,0 +1,98 @@
+/* Add your custom CSS styles here */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 30px;
+  font-size: 20px;
+  padding: 10px;
+  background-image: linear-gradient(to left,rgb(114, 187, 175),rgb(23, 185, 145));  
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+button {
+  width: 50%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #0f0f0f;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #5787bb;
+}
+
+/* Tool tip - gross annual income*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(228, 219, 219);
+    color: #968f8f;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.error-icon {
+  display: none;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: red;
+}
+.error-icon:hover + .tooltips {
+    visibility: visible;
+    color: red;
+}
+/* Tooltip styles */
+.tooltips {
+  display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    top: calc(100% + 5px);
+    left: 0;
+    color: red;
+}
